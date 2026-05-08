@@ -48,7 +48,7 @@ export async function synthesizeSpeech(
       },
     });
 
-    const params: Record<string, any> = {
+    const params = {
       Text: text,
       SessionId: `session-${Date.now()}`,
       VoiceType: voiceType,
@@ -57,10 +57,8 @@ export async function synthesizeSpeech(
       Volume: 5,
       Speed: typeof speed === 'number' ? Math.max(-2, Math.min(6, speed)) : 0,
       ModelType: 0,
+      ...(emotionCategory ? { EmotionCategory: emotionCategory } : {}),
     };
-    if (emotionCategory) {
-      params.EmotionCategory = emotionCategory;
-    }
 
     console.log('[TTS] 合成请求:', { text: text.slice(0, 50), voiceType, emotionCategory, speed: params.Speed });
 
