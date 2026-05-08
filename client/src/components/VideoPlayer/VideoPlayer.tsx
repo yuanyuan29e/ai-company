@@ -284,7 +284,8 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, VideoPlayerProps>(
         onClick={togglePlay}
         playsInline
         preload="metadata"
-        crossOrigin="anonymous"
+        // 注意：移除 crossOrigin 是为了兼容 Safari + 跨域大 mp4。
+        // AI 视觉抓帧改由独立 fetch + Blob URL 路径实现（见 useAIReactionEngine）。
       />
 
       {/* 左上角 - 剧名 */}
