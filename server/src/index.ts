@@ -26,11 +26,25 @@ const envOrigins = (process.env.ALLOWED_ORIGINS || '')
   .filter(Boolean);
 const allowedOrigins = [...new Set([...defaultOrigins, ...envOrigins])];
 
+// 把通配符 origin（如 "https://*.vercel.app"）转成正则，
+// 用于匹配 Vercel 的 Preview 部署域名（带哈希前缀）
+const wildcardToRegex = (pattern: string): RegExp => {
+  const escaped = pattern
+    .replace(/[.+?^${}()|[\]\\]/g, '\\$&')  // 转义正则特殊字符
+    .replace(/\*/g, '[^.]+');                // * 匹配单段（不跨 . 号）
+  return new RegExp(`^${escaped}$`);
+};
+const originRegexes = allowedOrigins
+  .filter(o => o.includes('*'))
+  .map(wildcardToRegex);
+const exactOrigins = new Set(allowedOrigins.filter(o => !o.includes('*')));
+
 app.use(cors({
   origin: (origin, cb) => {
     // 同源/curl/无 Origin 头的请求直接放行
     if (!origin) return cb(null, true);
-    if (allowedOrigins.includes(origin)) return cb(null, true);
+    if (exactOrigins.has(origin)) return cb(null, true);
+    if (originRegexes.some(re => re.test(origin))) return cb(null, true);
     return cb(new Error(`Origin ${origin} not allowed by CORS`));
   },
   credentials: true,
