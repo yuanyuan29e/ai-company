@@ -284,8 +284,10 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, VideoPlayerProps>(
         onClick={togglePlay}
         playsInline
         preload="metadata"
-        // 注意：移除 crossOrigin 是为了兼容 Safari + 跨域大 mp4。
-        // AI 视觉抓帧改由独立 fetch + Blob URL 路径实现（见 useAIReactionEngine）。
+        // crossOrigin="anonymous" 是 canvas 抓帧的前提（见 useFrameSampler）。
+        // 要求视频源（腾讯云 COS）开启 CORS 并返回 Access-Control-Allow-Origin 响应头。
+        // 当 src 为同源路径（如 /01-4K.mp4）时，该属性会被浏览器忽略，不影响本地开发。
+        crossOrigin="anonymous"
       />
 
       {/* 左上角 - 剧名 */}
