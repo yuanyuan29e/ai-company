@@ -118,7 +118,7 @@ export const PERSONA_CONFIGS: PersonaConfig[] = [
   {
     type: 'explorer',
     name: '阿探',
-    avatarUrl: '/avatars/explorer.png',
+    avatarUrl: '/avatars/explorer.svg',
     description: '伏笔细节全揪出，反转绝不被剧透',
     color: '#4CC9F0',
     skills: ['线索揪出', '伏笔预警', '反转预测'],
@@ -128,7 +128,7 @@ export const PERSONA_CONFIGS: PersonaConfig[] = [
   {
     type: 'empath',
     name: '糖糖',
-    avatarUrl: '/avatars/empath.png',
+    avatarUrl: '/avatars/empath.svg',
     description: '陪你哭陪你笑，嗑糖虐恋都懂你',
     color: '#FF69B4',
     skills: ['情绪共鸣', '嗑糖尖叫', '虐心安慰'],
@@ -138,7 +138,7 @@ export const PERSONA_CONFIGS: PersonaConfig[] = [
   {
     type: 'director',
     name: '戏骨哥',
-    avatarUrl: '/avatars/director.png',
+    avatarUrl: '/avatars/director.svg',
     description: '镜头门道我懂行，带你看剧不白看',
     color: '#9B59B6',
     skills: ['镜头解读', '演技点评', '服化道鉴赏'],
@@ -148,7 +148,7 @@ export const PERSONA_CONFIGS: PersonaConfig[] = [
   {
     type: 'roaster',
     name: '乐子人',
-    avatarUrl: '/avatars/roaster.png',
+    avatarUrl: '/avatars/roaster.svg',
     description: '嘴替已就位，追剧快乐加倍',
     color: '#FF6A00',
     skills: ['吐槽玩梗', '气氛担当', '快乐源泉'],
@@ -158,7 +158,7 @@ export const PERSONA_CONFIGS: PersonaConfig[] = [
   {
     type: 'timekeeper',
     name: '小理',
-    avatarUrl: '/avatars/timekeeper.png',
+    avatarUrl: '/avatars/timekeeper.svg',
     description: '人物关系理清楚，长篇追剧不迷路',
     color: '#00BCD4',
     skills: ['关系梳理', '时间线整理', '背景补充'],
