@@ -1,0 +1,5 @@
+# Reaction 数据库 - 多平台爬虫依赖
+requests
+protobuf
+beautifulsoup4
+lxml

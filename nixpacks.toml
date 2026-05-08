@@ -1,0 +1,13 @@
+# Railway 构建配置
+# 在 Railway UI 里把 Root Directory 设为 ai-companion-demo
+providers = ['node']
+
+[phases.install]
+cmds = ['cd server && npm ci']
+
+# 不预编译 TS，运行时直接用 tsx 跑（start 脚本使用 tsx）
+[phases.build]
+cmds = ['echo "skip build (tsx runs TS directly at runtime)"']
+
+[start]
+cmd = 'cd server && npm start'

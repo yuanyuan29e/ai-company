@@ -1,0 +1,26 @@
+{
+  "name": "ai-companion-server",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "eventsource-parser": "^1.1.2",
+    "express": "^4.19.2",
+    "openai": "^6.35.0",
+    "sql.js": "^1.14.1",
+    "tencentcloud-sdk-nodejs-tts": "^4.1.203"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}

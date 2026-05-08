@@ -1,0 +1,102 @@
+{
+  "description": "多平台 Reaction 视频爬取列表 - 近10年大热剧（全平台版）",
+  "instructions": "运行 python batch_crawl.py 批量爬取，B站优先",
+  "videos": [
+    {"platform": "bilibili", "bvid": "BV19UQ7BNE81", "drama_name": "庆余年", "episode_num": 1, "genre": "古偶", "tags": ["reaction", "权谋"]},
+    {"platform": "bilibili", "bvid": "BV19GQ9BvEa9", "drama_name": "庆余年", "episode_num": 1, "genre": "古偶", "tags": ["reaction", "权谋"]},
+    {"platform": "bilibili", "bvid": "BV1T4D4B7EZX", "drama_name": "庆余年", "episode_num": 1, "genre": "古偶", "tags": ["reaction", "权谋"]},
+    {"platform": "bilibili", "bvid": "BV1xBTmz7EdE", "drama_name": "苍兰诀", "episode_num": 11, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1AYdPYAEmq", "drama_name": "永夜星河", "episode_num": 1, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1QTd3YAECx", "drama_name": "永夜星河", "episode_num": 2, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1AsZFBJEiS", "drama_name": "永夜星河", "episode_num": 10, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1ntwizoEpZ", "drama_name": "长月烬明", "episode_num": 1, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1JLDcBfEu8", "drama_name": "漫长的季节", "episode_num": 11, "genre": "悬疑", "tags": ["reaction", "悬疑"]},
+    {"platform": "bilibili", "bvid": "BV1iFPjzwEFz", "drama_name": "漫长的季节", "episode_num": 9, "genre": "悬疑", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1wT421Q7FP", "drama_name": "漫长的季节", "episode_num": 9, "genre": "悬疑", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1i1ozB5EPC", "drama_name": "武林外传", "episode_num": 1, "genre": "喜剧", "tags": ["reaction", "经典"]},
+    {"platform": "bilibili", "bvid": "BV18TMTzgE1S", "drama_name": "武林外传", "episode_num": 1, "genre": "喜剧", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1JyoeB6Ezq", "drama_name": "北上", "episode_num": 1, "genre": "都市", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV176421M7Za", "drama_name": "狂飙", "episode_num": 1, "genre": "悬疑", "tags": ["reaction", "扫黑"]},
+    {"platform": "bilibili", "bvid": "BV1jJxFenEtT", "drama_name": "陈情令", "episode_num": 25, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1zZCmYDEhA", "drama_name": "陈情令", "episode_num": 42, "genre": "古偶", "tags": ["reaction", "仙侠"]},
+    {"platform": "bilibili", "bvid": "BV1kNxnenEqv", "drama_name": "知否知否应是绿肥红瘦", "episode_num": 28, "genre": "古偶", "tags": ["reaction", "宅斗"]},
+    {"platform": "bilibili", "bvid": "BV1ZvRiBiE8L", "drama_name": "知否知否应是绿肥红瘦", "episode_num": 43, "genre": "古偶", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1gVRPBaEtm", "drama_name": "知否知否应是绿肥红瘦", "episode_num": 31, "genre": "古偶", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1dY9xBPE5a", "drama_name": "知否知否应是绿肥红瘦", "episode_num": 36, "genre": "古偶", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1xERiBEEhr", "drama_name": "知否知否应是绿肥红瘦", "episode_num": 44, "genre": "古偶", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1nSCnYGEAa", "drama_name": "琅琊榜", "episode_num": 21, "genre": "古偶", "tags": ["reaction", "权谋"]},
+    {"platform": "bilibili", "bvid": "BV1Se5LzLEW9", "drama_name": "琅琊榜", "episode_num": 8, "genre": "古偶", "tags": ["reaction"]},
+    {"platform": "bilibili", "bvid": "BV1uSPxzSEMp", "drama_name": "甄嬛传", "episode_num": 1, "genre": "古偶", "tags": ["reaction", "宫斗"]},
+    {"platform": "bilibili", "bvid": "BV1nbRiBrEoi", "drama_name": "甄嬛传", "episode_num": 64, "genre": "古偶", "tags": ["reaction", "宫斗"]},
+
+    {
+      "platform": "tencent",
+      "bvid": "tencent_qyn2_ep01",
+      "drama_name": "庆余年第二季",
+      "episode_num": 1,
+      "genre": "古偶",
+      "tags": ["弹幕", "权谋", "腾讯视频"],
+      "platform_meta": {
+        "target_id": "q4100dpkd26",
+        "vid": "q4100dpkd26",
+        "article_id": "",
+        "duration": 2700
+      }
+    },
+    {
+      "platform": "tencent",
+      "bvid": "tencent_fanhua_ep01",
+      "drama_name": "繁花",
+      "episode_num": 1,
+      "genre": "都市",
+      "tags": ["弹幕", "都市", "王家卫", "腾讯视频"],
+      "platform_meta": {
+        "target_id": "w4100cthyoc",
+        "vid": "w4100cthyoc",
+        "article_id": "",
+        "duration": 3600
+      }
+    },
+    {
+      "platform": "tencent",
+      "bvid": "tencent_fanhua_ep02",
+      "drama_name": "繁花",
+      "episode_num": 2,
+      "genre": "都市",
+      "tags": ["弹幕", "都市", "腾讯视频"],
+      "platform_meta": {
+        "target_id": "n4100ctjhst",
+        "vid": "n4100ctjhst",
+        "article_id": "",
+        "duration": 3600
+      }
+    },
+
+    {
+      "platform": "iqiyi",
+      "bvid": "iqiyi_canglanjue_ep01",
+      "drama_name": "苍兰诀",
+      "episode_num": 1,
+      "genre": "古偶",
+      "tags": ["弹幕", "仙侠", "爱奇艺"],
+      "platform_meta": {
+        "video_id_iqiyi": "8843577660064500",
+        "content_id": "8843577660064500",
+        "max_pages": 3
+      }
+    },
+    {
+      "platform": "iqiyi",
+      "bvid": "iqiyi_canglanjue_ep02",
+      "drama_name": "苍兰诀",
+      "episode_num": 2,
+      "genre": "古偶",
+      "tags": ["弹幕", "仙侠", "爱奇艺"],
+      "platform_meta": {
+        "video_id_iqiyi": "4787024968220200",
+        "content_id": "4787024968220200",
+        "max_pages": 3
+      }
+    }
+  ]
+}
