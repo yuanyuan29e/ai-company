@@ -3,7 +3,9 @@
 providers = ['node']
 
 [phases.install]
-cmds = ['cd server && npm ci']
+# 使用 npm install 而非 npm ci，避免 package.json 与 package-lock.json
+# 不同步时构建直接失败（Railway/Nixpacks 默认会缓存 lock，使用 install 更稳健）
+cmds = ['cd server && npm install --no-audit --no-fund']
 
 # 不预编译 TS，运行时直接用 tsx 跑（start 脚本使用 tsx）
 [phases.build]
